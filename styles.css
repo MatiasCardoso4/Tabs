@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  margin-top: 20px;
+}
+
+.tabs-list-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  list-style: none;
+  margin-left: 50px;
+  position: relative;
+}
+
+.tabs-list-container  .tab-item a {
+  text-decoration: none;
+  font-size: 1.30rem;
+  color: rgb(191, 192, 194);
+  cursor: pointer;
+}
+
+.tabs-list-container  .tab-item a:hover,
+.tabs-list-container  .tab-item a:focus{
+  outline: none;
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 14px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container section {
+  background-color: black;
+  width: 50vw;
+  height: 20vh;
+  padding: 20px;
+  border-radius: 22px;
+  text-align: center;
+}
+
+.tab-content {
+  font-size: 1.37rem;
+  letter-spacing: 6px;
+  color: whitesmoke;
+}
